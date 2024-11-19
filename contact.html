@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amala Ibadan - Contact Us</title>
+    <link rel="stylesheet" href="contactstyle.css">
+    <link rel="shortcut icon" href="images/logo.png">
+</head>
+<body>
+    <header id="navbar">
+        <nav>
+            <div class="logo"><img src="images/logo2.png" alt="Amala Ibadan Logo"></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" style="color: #e08414;">Contact</a></li>
+            </ul>
+            <img src="images/menu3.png" alt="Menu Icon" class="menu-btn">
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>We'd love to hear from you! Reach out to us with any questions or feedback.</p>
+            <div class="info-columns">
+                <ul>
+                    <li><strong>Address:</strong> 162 Ikotun Idimu Road, Nobex BusStop, Lagos, Nigeria.</li>
+                    <li><strong>Phone:</strong> +234 704 777 7521</li>
+                </ul>
+                <ul>
+                    <li><strong>Address:</strong> 82, AIT road, Alagbado, Lagos, Nigeria.</li>
+                    <li><strong>Phone:</strong> +234 916 977 4773</li>
+                </ul>
+                <ul>
+                    <li><strong>Address:</strong> Grocery Bazaar (GB), 71 Meiran Road, Lagos, Nigeria.</li>
+                    <li><strong>Phone:</strong> +234 906 658 4259</li>
+                </ul>
+                <ul>
+                    <li><strong>Address:</strong> Grocery Bazaar(GB) supermarket OTA. 152/154 idirokeo road,ojuore OTA lagos Nigeria.</li>
+                    <li><strong>Phone:</strong> +234 810 490 7018</li>
+                </ul>
+                <ul>
+                    <li><strong>Address:</strong> Grocery Bazaar (GB), Plot G, Block 33, Unity bus stop, Command road, Ipaja, Lagos Nigeria.</li>
+                      <li><strong>Phone:</strong> +234 912 445 4075</li>
+                </ul>
+
+                <ul>
+                    <li><strong>Address:</strong> 171, Lagos-Abeokuta Expressway, Iyana Ipaja Lagos Nigeria</li>
+                    <li><strong>Phone:</strong> +234 912 445 4075</li>
+                </ul>
+                <ul>
+                    <li><strong>Email:</strong> amalaibadanofficial@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+       
+        <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="socials-section">
+        <h2>Follow Us on Social Media</h2>
+        <p>Stay connected for the latest updates and promotions!</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/p/%C3%80m%C3%A0l%C3%A0-Ibadan-100083337152799/" target="_blank"><img src="images/facebook.webp" alt="Facebook"></a>
+            <a href="https://www.instagram.com/amalaibadanofficial/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://wa.me/2347047777521?text=Hello!%20I%20would%20like%20to%20place%20an%20order." target="_blank"><img src="images/whatsapp.jpg" alt="whatsapp"></a>
+            <a href="https://www.tiktok.com/@amalaibadanofficial" target="_blank"><img src="images/tiktok.avif" alt="TikTok"></a>
+        </div>
+    </section>
+
+    <section class="additional-info-section">
+        <h2>Our Location & Hours</h2>
+        <div class="location-hours">
+            <div class="map-container">
+                <!-- Embed Google Maps iframe or use an image of the location -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.644593760987!2d3.275205173504568!3d6.566463822665663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b91e8872e0b73%3A0xa6dc2f7969b2496f!2sAmala%20Ibadan!5e0!3m2!1sen!2sng!4v1731625976544!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="hours">
+                <h3>Opening Hours</h3>
+                <ul>
+                    <li><strong>Monday - Sunday:</strong> 9:00 AM - 9:00 PM</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu');
+        });
+
+        document.addEventListener('scroll', () => {
+            var scroll_position = window.scrollY;
+            if (scroll_position > 250) {
+                navbar.style.backgroundColor = '#4138388f';
+            } else {
+                navbar.style.backgroundColor = 'transparent';
+            }
+        });
+    </script>
+</body>
+</html>
